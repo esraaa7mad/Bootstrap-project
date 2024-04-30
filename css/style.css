@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.section4{
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/Firefly\ dounats\ with\ pink\ background\ 38912.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+    margin: 40px 0px;
+}
+.section4 .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card img{
+    width: 70%;
+    margin: auto;
+    height: 200px;
+}
+.card::after{
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color: rgba(216, 112, 147, 0.4);
+    transition: 2s;
+    opacity: 0;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.pricing{
+    position: relative;
+    height: 400px;
+    background-image: url(../images/frozen-chocolate.jpg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.pricing .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.c{
+    margin-bottom: 20px;
+}
+.c :hover{
+    border-radius: 20px;
+    transform: scale(.9);
+}
+.circle{
+    position: absolute;
+    top:150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+.cir1{
+    background-image: url(../images/frozen-chocolate.jpg);
+    background-size: cover;
+}
+.p2{
+    background-image: url(../images/refresher.jpg);
+}
+.cir2{
+    background-image: url(../images/refresher.jpg);
+    background-size: cover;
+}
+.p3{
+    background-image: url(../images/iced-coffee.jpg);
+}
+.cir3{
+    background-image: url(../images/iced-coffee.jpg);
+    background-size: cover;
+}
+.details1,.details{
+    position: absolute;
+    color: white;
+    margin-left: 40px;
+}
+.traingleimg,.traingleimg2{
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
+}
+.traingleimg2{clip-path: polygon(0 1%, 100% 0%, 66% 100%, 0 100%);}
+.join{
+    padding: 5px;
+    box-shadow: 1px 1px 10px 2px gray;
+    border-radius: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tw,.wh,.inst{
+    display: block;
+    font-size: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: blue;
+    border: none;
+}
+.wh{color: green;}
+.inst{color: blueviolet;}

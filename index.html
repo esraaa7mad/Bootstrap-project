@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>templet3</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" >
+  </head>
+  <body>
+      <header >
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light p-2">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="color: orangered;">DUNKIN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="margin-left: 40px;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-left: 20px;">Shop</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 20px;">
+                      careers
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">working at Dunkin</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Apply now</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">corporate</a></li>
+                      <li><a class="dropdown-item" href="#">opportunites</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" style="margin-left: 20px;">Menu</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: 5px; width: 150px;"> Sign in</button>
+  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content  bg-dark">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: whitesmoke">Login</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                              <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label" style="color: whitesmoke;">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text" style="color: whitesmoke;">We'll never share your email with anyone else.</div>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label" style="color: whitesmoke;">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label" for="flexSwitchCheckDefault" style="color: whitesmoke;">Remmember me</label>
+                              </div>
+                          </form>    
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" >Login </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div></form>
+              </div>
+            </div>
+          </nav> 
+        </div> 
+      </header>
+
+      <!-- carousle section -->
+      <main>
+        <div class="container">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/Firefly dounats with pink background 38912.jpg" class="d-block w-100" alt="..." height="500px">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Firefly dounats with pink background 779.jpg" class="d-block w-100" alt="..." height="500px">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/Firefly dounats with pink background 99281.jpg" class="d-block w-100" alt="..." height="500px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slider4.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(233, 177, 74, 0.3)">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/slider1.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(95, 158, 160, 0.3);">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider2.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(228, 158, 181, 0.719);" >
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider3.jpg" class="d-block w-100" alt="..." height="600px">
+              <div class="carousel-caption d-none d-md-block" style="background-color: rgba(193, 223, 224, 0.3);">
+                <h5>Forth slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+           
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+      </main>
+
+      <section>
+        <div class="container">
+          <hr>
+          <div class="learn p-2" style="background-color: rgba(218, 163, 180, 0.5); width: 100%;">
+            <h2 style="margin-left: 50px;">Welcom on Dunkin Donuts!</h2>
+            <p style="margin-left: 50px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit fugiat ex vitae fugit ipsum cupiditate et. Dolorem ab aliquam pariatur atque dolorum nisi nobis eveniet neque itaque nesciunt, iure placeat.</p>
+            <button class="btn btn-outline-light" type="learn" style="margin-left: 50px;">Learn More!</button>
+          </div>
+          <div class="space" style="height: 40px;"><hr></div>
+        </div>
+      </section>
+
+      <!-- according section -->
+      <section>
+        <div class="container">
+          <h2 style="text-align: center;padding: 20px; background-color: palevioletred; color: white;">products</h2>
+          <div class="accordion-flush p-1" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="color: palevioletred; font-size: 30px;">
+                  Frozen Drinks
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="images/frozen-chocolate.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/frozen-coffee.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/collatta.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/frozen-match-latte.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: palevioletred; font-size: 30px;">
+                  Espresso & Coffee
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="images/hot-americano.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/hot-latte.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/hot-coffee.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/iced-coffee.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: palevioletred; font-size: 30px;">
+                  Sandwiches & More
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="images/Sausage_Egg&Cheese.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/BaconEggCheeseBagel.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/EngMuffinTurkeySausageEggCheese.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                  <img src="images/SourdoughBreakfastsandwich.jpg" alt="not found" width="200px" height="150px" style="display: inline-block;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- background attachement -->
+      <section>
+        <div class="container">
+          <div class="section4">
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section 6 cards -->
+      <section>
+        <div class="container">
+          <h2 style="text-align: center;">Most Sold</h2>
+          <div class="container ">
+            <div class="row">
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/HashBrowns.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Hash Browns</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Our hash browns are lightly seasoned and golden brown for maximum goodness. Delicious on their own or paired with a sandwich.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/VanillaFrostedSprinklesDonut.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Vanilla Donuts</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Our delicious donuts come in a variety of flavors, so there’s a favorite for everyone. Delicious on their own or paired with our dounts.</p> 
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/4Muffins.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Clasic MUFFINS</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi numquam eligendi corporis quia dignissimos enim officia accusamus eveniet! Autem!</p>  
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/iced-signature-latte.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Iced signature latte</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero officiis alias ipsam quod hic aut eaque temporibus amet eius. Est?</p>     
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/EngMuffinEggCheese.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Egg & Cheese</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eveniet dolore aspernatur fuga a maiores officia impedit quia.</p>      
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-12 col-md-4" style="margin-bottom: 40px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/refresher.jpg" alt="Card image" height="200px">
+                    <div class="card-body">
+                      <h4 class="card-title" style="display: inline-block; text-align: left;">Dunkin Refreshers</h4>
+                      <a href="#" class="btn btn-danger" style="display: inline-block;">Learn More</a>
+                      <p class="card-text" style="text-align: left;">Made with B vitamins and energy from green tea. Try Strawberry Dragonfruit flavored and Peach Passion Fruit flavored.</p>        
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- background attachement -->
+       <section>
+        <div class="container">
+          <div class="section4">
+            <div class="overlay"></div>
+          </div>
+        </div>
+       </section>
+
+       <!-- section pricing -->
+       <section>
+        <h2 style="height: 100px; text-align: center;">Recommendations</h2>
+        <div class="container text-center">
+          <div class="row ">
+            <div class="col-sm-12 col-md-4 c">
+              <div class="pricing p1">
+                <div class="overlay">
+                <div class="details1">
+                  <h3>Frozen Choclete</h3>
+                  <p>Meduim size</p>
+                </div>
+                  <div class="circle cir1"></div>
+                  <div class="details">
+                  <p>Powerd By</p>
+                  <p>Dunkin Donuts</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 c">
+              <div class="pricing p2">
+                <div class="overlay">
+                <div class="details1">
+                  <h3>Dunkin Refreshers</h3>
+                  <p>Small size</p>
+                </div>
+                  <div class="circle cir2"></div>
+                  <div class="details">
+                    <p>Powerd By</p>
+                    <p>Dunkin Donuts</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 c">
+              <div class="pricing p3">
+                <div class="overlay">
+                <div class="details1">
+                  <h3>Iced coffee</h3>
+                  <p>Large size</p>
+                </div>
+                  <div class="circle cir3"></div>
+                  <div class="details">
+                    <p>Powerd By</p>
+                    <p>Dunkin Donuts</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       </section>
+
+       <!-- offers -->
+       <section>
+        <div class="container">
+          <h2 style="padding: 20px; text-align: center;">Offers</h2>
+        <div class="container d-flex justify-content-between mb-5" style="box-shadow: 1px 1px 10px 1px gray; ">
+          <div class="partone" style="width: 50%;">
+            <h3 style="color: palevioletred;">PREMIUM SIPS</h3>
+            <i class="fas fa-tags" style="display: inline-block;"></i>
+            <p style="display: inline-block;">Discount $2</p>
+            <div class="line" style="width: 90px; height: 2px; background-color: palevioletred ;margin-top: -10px; margin-bottom: 20px;"></div>
+            <p style="margin-bottom: 40px;">A small, medium or large hot or iced, espresso, Cold Brew, Cold Brew with Cold Foam, or Dunkin' Refreshe aliquid optio quibusdam beatae quod nisi. Nostrum, cupiditate repellat, sunt facere atque quis nulla voluptatem accusantium labore fugiat dolore.</p>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clipboard-list"></i>products</button>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clock"></i>55mins</button>
+            <button type="button" class="btn btn-outline-secondary text-danger"><i class="fas fa-play"></i>buy</button>
+          </div>
+          <img src="images/crafteddrunks.jpg" alt="not found" class="traingleimg ">
+          
+        </div>
+        <!-- <div class="space" style="height: 100px;"></div> -->
+        <div class="container d-flex justify-content-between mb-5" style="box-shadow: 1px 1px 10px 1px gray; ">
+          <img src="images/sand.jpg" alt="not found" class="traingleimg2 ">
+          <div class="partone" style="width: 50%;">
+            <h3 style="color: orange;">package</h3>
+            <i class="fas fa-tags" style="display: inline-block;"></i>
+            <p style="display: inline-block;">Discount $5</p>
+            <div class="line" style="width: 100px; height: 2px; background-color: green;margin-top: -15px; margin-bottom: 20px;"></div>
+            <p style="margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas adipisci rerum, aliquid optio quibusdam beatae quod nisi. Nostrum, cupiditate repellat, sunt facere atque quis nulla voluptatem accusantium labore fugiat dolore.</p>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clipboard-list"></i>products</button>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clock"></i>55mins</button>
+            <button type="button" class="btn btn-outline-secondary text-success"><i class="fas fa-play"></i>play</button>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-between mb-5" style="box-shadow: 1px 1px 10px 1px gray; ">
+          <div class="partone" style="width: 50%;">
+            <h3 style="color: palevioletred;">CRAFTED DRINKS</h3>
+            <i class="fas fa-tags" style="display: inline-block;"></i>
+            <p style="display: inline-block;">Discount $3</p>
+            <div class="line" style="width: 100px; height: 2px; background-color: yellow;margin-top: -15px; margin-bottom: 20px;"></div>
+            <p style="margin-bottom: 40px;">Any size frozen drink or Signature Latte — hot or iced., aliquid optio quibusdam beatae quod nisi. Nostrum, cupiditate repellat, sunt facere atque quis nulla voluptatem accusantium labore fugiat dolore.</p>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clipboard-list"></i>products</button>
+            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-clock"></i>55mins</button>
+            <button type="button" class="btn btn-outline-secondary text-warning"><i class="fas fa-play"></i>play</button>
+          </div>
+          <img src="images/dunkin-fnl-cover.jpg" alt="not found" class="traingleimg" width="200">
+        </div>
+        </div>
+       </section>
+
+       <!-- join us -->
+       <section>
+        <div class="container mb-5">
+          <h2 style="height: 100px; text-align: center;margin-top: 40px;">Join us</h2>
+          <div class="container">
+            <div class="row gap-5">
+              <div class="col-lg col-md-12 join">
+                <h5>Subscrip Now</h5>
+                <i class="fab fa-twitter tw"></i>
+                <a href="#" style="text-decoration: none; color: black;">Go to link</a>
+              </div>
+              <div class="col-lg col-md-12 join">
+                <h5>Subscrip Now</h5>
+                <i class="fab fa-whatsapp-square wh"></i>
+                <a href="#" style="text-decoration: none; color: black;">Go to link</a>
+              </div>
+              <div class="col-lg col-md-12 join">
+                <h5>Subscrip Now</h5>
+                <i class="fab fa-facebook-square tw"></i>
+                <a href="#" style="text-decoration: none; color: black;">Go to link</a>
+              </div>
+              <div class="col-lg col-md-12 join">
+                <h5>Subscrip Now</h5>
+                <i class="fab fa-instagram-square inst"></i>
+                <a href="#" style="text-decoration: none; color: black;">Go to link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- footer -->
+        <footer> 
+          <div class="container text-center text-lg-start bg-light text-muted">
+            <div class="container p-4">
+              <!-- Section: Images -->
+              <section class="">
+                <div class="row">
+                  <div class="col-lg-2 col-md-12  mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/hot-americano.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12  mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/hot-coffee.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/hot-latte.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/iced-signature-latte.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/hot-tea.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div  class="bg-image hover-overlay ripple shadow-1-strong rounded"  data-ripple-color="light" >
+                      <img src="images/matcha-latte.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Section: Images -->
+            </div>
+            <!-- Section: Links  -->
+            <section class="">
+              <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                      <i class="fas fa-gem me-3"></i>Dunkin
+                    </h6>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, 
+                      cupiditate reprehenderit tempore nostrum nemo ullam nihil perferendis distinctio facere illum!
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4"> Products </h6>
+                    <p> <a href="#!" class="text-reset">Hot Tea</a></p>
+                    <p> <a href="#!" class="text-reset">Ice Tea</a></p>
+                    <p> <a href="#!" class="text-reset">Coffee</a></p>
+                    <p> <a href="#!" class="text-reset">Ice Coffee</a></p>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4"> Useful links</h6>
+                    <p><a href="#!" class="text-reset">Prices</a></p>
+                    <p><a href="#!" class="text-reset">Delivary</a></p>
+                    <p><a href="#!" class="text-reset">Orders</a></p>
+                    <p><a href="#!" class="text-reset">Help</a></p>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Egypt</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@example.com </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2021 Copyright:
+              <a class="text-reset fw-bold" href="#" style="text-decoration: none;">Done!</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+        </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+</html>
