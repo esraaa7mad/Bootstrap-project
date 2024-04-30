@@ -98,6 +98,9 @@
     color: white;
     margin-left: 40px;
 }
+.details{
+bottom:0;
+}
 .traingleimg,.traingleimg2{
     width: 200px;
     height: 200px;
